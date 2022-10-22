@@ -28,4 +28,16 @@ public class SpellController {
         return ResponseEntity.status(HttpStatus.CREATED).body(spellService.addNewSpell(spellsModel));
     }
 
+    @PutMapping("/spells/{id}")
+    public ResponseEntity<SpellsModel> updateSpell(@PathVariable Integer id, @RequestBody SpellsModel spellsModel){
+       return ResponseEntity.status(HttpStatus.OK).body(spellService.updateSpell(id,spellsModel));
+    }
+
+    @DeleteMapping("/spells/{id}")
+    public ResponseEntity<Object> updateSpell(@PathVariable Integer id){
+        spellService.deleteSpell(id);
+        return ResponseEntity.status(HttpStatus.OK).body("Spell deletada");
+    }
+
+
 }

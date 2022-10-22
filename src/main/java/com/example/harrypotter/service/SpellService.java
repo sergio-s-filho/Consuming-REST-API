@@ -11,26 +11,44 @@ import java.util.List;
 @Service
 public class SpellService {
    List<SpellsModel> spellsModels = new ArrayList<>();
-   Integer id = 0;
 
+   //GET METHOD
    public List<SpellsModel> getAllSpells(){
        if(spellsModels.isEmpty()){
            String url = "https://hp-api.onrender.com/api/spells";
            RestTemplate restTemplate = new RestTemplate();
            SpellsModel[] object = restTemplate.getForObject(url,SpellsModel[].class);
            spellsModels.addAll(Arrays.asList(object));
-           for(SpellsModel spell : spellsModels){
-               spell.setId(id);
-               id++;
-           }
+           updateId();
        }
        return spellsModels;
    }
 
+   //POST METHOD
    public SpellsModel addNewSpell(SpellsModel spellsModel){
-       spellsModel.setId(id);
        spellsModels.add(spellsModel);
-       id++;
+       updateId();
        return spellsModel;
+   }
+
+   //PUT METHOD
+   public SpellsModel updateSpell(Integer id, SpellsModel spellModel){
+       SpellsModel spellModelTemp = spellsModels.get(id);
+       spellModelTemp.setName(spellModel.getName());
+       spellModelTemp.setDescription(spellModel.getDescription());
+       return spellModelTemp;
+   }
+   //DELETE METHOD
+   public void deleteSpell(Integer id){
+       spellsModels.remove(spellsModels.get(id));
+       updateId();
+   }
+
+   public void updateId(){
+       Integer id = 0;
+       for(SpellsModel spell : spellsModels){
+           spell.setId(id);
+           id++;
+       }
    }
 }
