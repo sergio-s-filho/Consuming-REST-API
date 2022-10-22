@@ -1,4 +1,4 @@
-## Consume-REST-API
+## Consuming-REST-API
 Building an application that creates a REST API to consume another external REST API and store it in static memory.
 
 
