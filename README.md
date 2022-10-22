@@ -12,7 +12,7 @@ In this project, the Harry Potter REST API was used as an External API
 
    `http://localhost:8080/harrypotter/spells`
    
-### Response
+### [ Response ]
 
     Request Method: GET
     Status Code: 200
@@ -59,7 +59,7 @@ In this project, the Harry Potter REST API was used as an External API
     "description": "Burns everything around"
    }
    ```
-### Response
+### [ Response ]
 
     Request Method: POST
     Status Code: 201
