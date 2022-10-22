@@ -5,7 +5,7 @@ Building an application that creates a REST API to consume another external REST
 ## REST API
 In this project, the Harry Potter REST API was used as an External API
 #### url: https://hp-api.onrender.com/api/spells
-
+--------------------------------------------------------------------
 ### [ Request ]
 ## [ Get List of Spells Aloccated in Memory ]
 `GET harrypotter/spells/`
@@ -44,7 +44,7 @@ In this project, the Harry Potter REST API was used as an External API
   ]
     
 ```
-
+--------------------------------------------------------------------
 ### [ Request ]
 ## [ Create a new spell in Memory ]
 
@@ -66,7 +66,6 @@ In this project, the Harry Potter REST API was used as an External API
     Date: Sat, 22 Oct 2022 18:13:36 GMT
     Content-Type: application/json
     
-### Return
 
    ```json
    {
@@ -75,6 +74,52 @@ In this project, the Harry Potter REST API was used as an External API
     "description": "Burns everything around"
    }
    ```
-   
+--------------------------------------------------------------------   
+### [ Request ]
+## [ Update a Spell in Memory ]
 
+`PUT harrypotter/spells/{id}`
+
+   `http://localhost:8080/harrypotter/spells/{id}`
+   
+   ```json
+   {
+    "name": "Rasengan",
+    "description": "a ball of chakra that spins at extremely high speed"
+   }
+   ```
+   
+### [ Response ]
+
+    Request Method: PUT
+    Status Code: 200
+    Date: Sat, 22 Oct 2022 20:41:15 GMT
+    Content-Type: application/json
+
+   ```json
+   {
+    "id": 0,
+    "name": "Rasengan",
+    "description": "a ball of chakra that spins at extremely high speed"
+   }
+   ```
+--------------------------------------------------------------------   
+### [ Request ]
+## [ Delete a spell in Memory ]
+
+`DELETE harrypotter/spells/{id}`
+
+   `http://localhost:8080/harrypotter/spells/{id}`
+   
+### [ Response ]
+
+    Request Method: DELETE
+    Status Code: 200
+    Date: Sat, 22 Oct 2022 20:52:24 GMT
+    Content-Type: application/json
+    
+    
+   ```Spell Deleted```
+    
+    
     
