@@ -24,19 +24,29 @@ public class SpellController {
 
 
     @PostMapping("/spells")
-    public ResponseEntity<SpellsModel> addNewSpell (@RequestBody SpellsModel spellsModel){
+    public ResponseEntity<Object> addNewSpell (@RequestBody SpellsModel spellsModel){
         return ResponseEntity.status(HttpStatus.CREATED).body(spellService.addNewSpell(spellsModel));
     }
 
     @PutMapping("/spells/{id}")
-    public ResponseEntity<SpellsModel> updateSpell(@PathVariable Integer id, @RequestBody SpellsModel spellsModel){
-       return ResponseEntity.status(HttpStatus.OK).body(spellService.updateSpell(id,spellsModel));
+    public ResponseEntity<Object> updateSpell(@PathVariable Integer id, @RequestBody SpellsModel spellsModel){
+        if(spellService.existById(id)){
+            return ResponseEntity.status(HttpStatus.OK).body(spellService.updateSpell(id,spellsModel));
+        }else{
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("O Id passado nao existe no DataBase");
+        }
+
     }
 
     @DeleteMapping("/spells/{id}")
     public ResponseEntity<Object> updateSpell(@PathVariable Integer id){
-        spellService.deleteSpell(id);
-        return ResponseEntity.status(HttpStatus.OK).body("Spell deletada");
+        if(spellService.existById(id)){
+            spellService.deleteSpell(id);
+            return ResponseEntity.status(HttpStatus.OK).body("Spell deletada");
+        }else{
+            return ResponseEntity.status(HttpStatus.CONFLICT).body("O Id passado nao existe no DataBase");
+        }
+
     }
 
 

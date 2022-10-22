@@ -51,4 +51,8 @@ public class SpellService {
            id++;
        }
    }
+
+   public boolean existById(Integer id){
+       return id <= (spellsModels.size() - 1);
+   }
 }
