@@ -1,1 +1,340 @@
 
+{
+	"info": {
+		"_postman_id": "159e894d-9c73-474a-88d4-62551291cede",
+		"name": "Harry Potter API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23754080"
+	},
+	"item": [
+		{
+			"name": "allSpells",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/harrypotter/spells",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"harrypotter",
+						"spells"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "allSpells",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/harrypotter/spells",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"harrypotter",
+								"spells"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Oct 2022 21:49:50 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 0,\n        \"name\": \"Accio\",\n        \"description\": \"Summons objects\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Aguamenti\",\n        \"description\": \"Summons water\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Alohomora\",\n        \"description\": \"Unlocks objects\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Anapneo\",\n        \"description\": \"Clears someone's airway\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Aparecium\",\n        \"description\": \"Reveals secret written messages\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Apparate\",\n        \"description\": \"A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and appear at another location (disapparate is the opposite)\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Ascendio\",\n        \"description\": \"Propells someone into the air\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Avada Kedavra\",\n        \"description\": \"Also known as The Killing Curse, the most evil spell in the Wizarding World; one of three Unforgivable Curses; Harry Potter is the only known witch or wizard to survive it\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Avis\",\n        \"description\": \"Conjures a small flock of birds\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Bat\",\n        \"description\": \"Bogey Hex - Turns the target's boogers into bats\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Bombardo\",\n        \"description\": \"Creates an explosion\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Brackium Emendo\",\n        \"description\": \"Heals broken bones\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Capacious Extremis\",\n        \"description\": \"Known as the Extension Charm, it's a complicated spell that can greatly expand or extend the capacity of an object or space without affecting it externally\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Confundo\",\n        \"description\": \"Known as the Confundus Charm, it causes confusion of the target\"\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Conjunctivitis Curse\",\n        \"description\": \"Affects the eyes and sight of a target\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Crinus Muto\",\n        \"description\": \"Changes hair color and style\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Crucio\",\n        \"description\": \"One of three Unforgivable Curses, it causes unbearable pain in the target\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Diffindo\",\n        \"description\": \"Used to precisely cut an object\"\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Disillusionment Charm\",\n        \"description\": \"Causes the target to take on the appearance of its surroundings\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Disapparate\",\n        \"description\": \"A non-verbal transportation spell that allows a witch or wizard to instantly travel on the spot and leave for another location (apparate is the opposite)\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Engorgio\",\n        \"description\": \"Causes rapid growth in the targeted object\"\n    },\n    {\n        \"id\": 21,\n        \"name\": \"Episkey\",\n        \"description\": \"Heals minor injuries\"\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Expecto patronum\",\n        \"description\": \"The Patronus Charm is a powerful projection of hope and happiness that drives away Dementors; a corpeal Patronus takes the the respective animal form of the caster, while a non-corpeal appears as a wisp of light; at 13, Harry Potter was the youngest known witch or wizard to prouduce a corpeal Patronus\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Erecto\",\n        \"description\": \"Allows a witch or wizard to build a structure, like a tent\"\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Evanesco\",\n        \"description\": \"Vanishes objects\"\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Expelliarmus\",\n        \"description\": \"Forces an opponent to drop whatever's in their possession\"\n    },\n    {\n        \"id\": 26,\n        \"name\": \"Ferula\",\n        \"description\": \"A healing charm that conjures wraps and bandages for wounds\"\n    },\n    {\n        \"id\": 27,\n        \"name\": \"Fidelius Charm\",\n        \"description\": \"A complex charm that conceals a secret into the soul of a chosen \\\"Secret Keeper\\\". If a location is the subject of concealment, it becomes undetectable to others\"\n    },\n    {\n        \"id\": 28,\n        \"name\": \"Fiendfyre Curse\",\n        \"description\": \"Conjures destructive, enormous enchanted flames\"\n    },\n    {\n        \"id\": 29,\n        \"name\": \"Finite Incantatem\",\n        \"description\": \"A general counter-spell that's used to reverse or counter already cast charms\"\n    },\n    {\n        \"id\": 30,\n        \"name\": \"Furnunculus Curse\",\n        \"description\": \"A jinx that causes a breakout of boils or pimples\"\n    },\n    {\n        \"id\": 31,\n        \"name\": \"Geminio\",\n        \"description\": \"Duplicates objects\"\n    },\n    {\n        \"id\": 32,\n        \"name\": \"Glisseo\",\n        \"description\": \"Transforms a staircase into a slide\"\n    },\n    {\n        \"id\": 33,\n        \"name\": \"Homenum Revelio\",\n        \"description\": \"Reveals the presence of another person\"\n    },\n    {\n        \"id\": 34,\n        \"name\": \"Homonculus Charm\",\n        \"description\": \"Detects anyone's true identity and location on a piece of parchment; used to create the Marauder's Map\"\n    },\n    {\n        \"id\": 35,\n        \"name\": \"Immobulus\",\n        \"description\": \"Immobilises living targets\"\n    },\n    {\n        \"id\": 36,\n        \"name\": \"Impedimenta\",\n        \"description\": \"A temporary jinx that slows the movement of the target\"\n    },\n    {\n        \"id\": 37,\n        \"name\": \"Incarcerous\",\n        \"description\": \"Conjures ropes\"\n    },\n    {\n        \"id\": 38,\n        \"name\": \"Imperio\",\n        \"description\": \"One of the three Unforgivable Curses, it places the target under the complete control of the caster\"\n    },\n    {\n        \"id\": 39,\n        \"name\": \"Impervius\",\n        \"description\": \"Makes an object waterproof\"\n    },\n    {\n        \"id\": 40,\n        \"name\": \"Incendio\",\n        \"description\": \"Conjures flames\"\n    },\n    {\n        \"id\": 41,\n        \"name\": \"Langlock\",\n        \"description\": \"Causes the target's tongue to stick to the roof of their mouth\"\n    },\n    {\n        \"id\": 42,\n        \"name\": \"Legilimens\",\n        \"description\": \"Invading or navigating another's mind\"\n    },\n    {\n        \"id\": 43,\n        \"name\": \"Levicorpus\",\n        \"description\": \"Levitates the target by their ankle\"\n    },\n    {\n        \"id\": 44,\n        \"name\": \"Locomotor Mortis\",\n        \"description\": \"The Leg-Locker curse bounds the target's legs\"\n    },\n    {\n        \"id\": 45,\n        \"name\": \"Lumos\",\n        \"description\": \"Illuminates the caster's wand\"\n    },\n    {\n        \"id\": 46,\n        \"name\": \"Morsmordre\",\n        \"description\": \"Conjures and projects Lord Voldemort's Dark Mark\"\n    },\n    {\n        \"id\": 47,\n        \"name\": \"Mucus Ad Nauseam\",\n        \"description\": \"Inflicts an extreme runny nose or cold\"\n    },\n    {\n        \"id\": 48,\n        \"name\": \"Muffliato\",\n        \"description\": \"Creates a buzzing sound in the target's ears to prevent eavesdropping\"\n    },\n    {\n        \"id\": 49,\n        \"name\": \"Nox\",\n        \"description\": \"Reverses the lumos charm, extinguishing a wand's light\"\n    },\n    {\n        \"id\": 50,\n        \"name\": \"Obliviate\",\n        \"description\": \"Erases the target's memory\"\n    },\n    {\n        \"id\": 51,\n        \"name\": \"Obscuro\",\n        \"description\": \"Conjures a blindfold\"\n    },\n    {\n        \"id\": 52,\n        \"name\": \"Oculus Reparo\",\n        \"description\": \"Repairs eyeglasses\"\n    },\n    {\n        \"id\": 53,\n        \"name\": \"Oppugno\",\n        \"description\": \"Directs an object or person to attack a victim\"\n    },\n    {\n        \"id\": 54,\n        \"name\": \"Petrificus Totalus\",\n        \"description\": \"Temporarily freezes or petrifies the body of the target\"\n    },\n    {\n        \"id\": 55,\n        \"name\": \"Periculum\",\n        \"description\": \"Conjures flares/red sparks\"\n    },\n    {\n        \"id\": 56,\n        \"name\": \"Piertotum Locomotor\",\n        \"description\": \"Incantation used to bring to life inanimate objects and artifacts\"\n    },\n    {\n        \"id\": 57,\n        \"name\": \"Protean Charm\",\n        \"description\": \"Links objects together for better communication\"\n    },\n    {\n        \"id\": 58,\n        \"name\": \"Protego\",\n        \"description\": \"Casts an invisible shield around the caster, protecting against spells and objects (except for The Killing Curse)\"\n    },\n    {\n        \"id\": 59,\n        \"name\": \"Reducto\",\n        \"description\": \"Reduces the target to pieces\"\n    },\n    {\n        \"id\": 60,\n        \"name\": \"Reducio\",\n        \"description\": \"Shrinks an enlarged object to its regular size\"\n    },\n    {\n        \"id\": 61,\n        \"name\": \"Renneverate\",\n        \"description\": \"Awakens or revives the target\"\n    },\n    {\n        \"id\": 62,\n        \"name\": \"Reparifors\",\n        \"description\": \"Heals magical ailments like poisoning or paralysis\"\n    },\n    {\n        \"id\": 63,\n        \"name\": \"Reparo\",\n        \"description\": \"Fixes broken objects\"\n    },\n    {\n        \"id\": 64,\n        \"name\": \"Rictusempra\",\n        \"description\": \"A charm that disarms an opponent by tickling them\"\n    },\n    {\n        \"id\": 65,\n        \"name\": \"Riddikulus\",\n        \"description\": \"Used to defeat a Boggart, the charm allows the scary creature to assume a comedic form, disarming it\"\n    },\n    {\n        \"id\": 66,\n        \"name\": \"Scourgify\",\n        \"description\": \"Cleans objects\"\n    },\n    {\n        \"id\": 67,\n        \"name\": \"Sectumsempra\",\n        \"description\": \"Inflicts severe lacerations and haemorrhaging on the target\"\n    },\n    {\n        \"id\": 68,\n        \"name\": \"Serpensortia\",\n        \"description\": \"Conjures a live snake\"\n    },\n    {\n        \"id\": 69,\n        \"name\": \"Silencio\",\n        \"description\": \"Silences the target\"\n    },\n    {\n        \"id\": 70,\n        \"name\": \"Sonorus\",\n        \"description\": \"Amplifies the witch or wizard's voice\"\n    },\n    {\n        \"id\": 71,\n        \"name\": \"Spongify\",\n        \"description\": \"Softens the target\"\n    },\n    {\n        \"id\": 72,\n        \"name\": \"Stupefy\",\n        \"description\": \"The Stunning spell freezes objects and renders living targets unconscious\"\n    },\n    {\n        \"id\": 73,\n        \"name\": \"Tarantallegra\",\n        \"description\": \"Aimed at the legs, causes uncontrollable dancing movement\"\n    },\n    {\n        \"id\": 74,\n        \"name\": \"Unbreakable Vow\",\n        \"description\": \"A magically binding contract that results in the death of whoever breaks it\"\n    },\n    {\n        \"id\": 75,\n        \"name\": \"Wingardium Leviosa\",\n        \"description\": \"Causes an object to levitate; but remember what Hermione said: \\\"It's Wing-gar-dium Levi-o-sa, make the 'gar' nice and long.'\\\"\"\n    },\n    {\n        \"id\": 76,\n        \"name\": \"Dragon Flame\",\n        \"description\": \"Burns everything around\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "adicionarSpells",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Dragon Flame\",\r\n    \"description\": \"Burns everything around\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/harrypotter/spells",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"harrypotter",
+						"spells"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "adicionarSpells",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dragon Flame\",\r\n    \"description\": \"Burns everything around\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/harrypotter/spells",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"harrypotter",
+								"spells"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Oct 2022 21:50:00 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 77,\n    \"name\": \"Dragon Flame\",\n    \"description\": \"Burns everything around\"\n}"
+				}
+			]
+		},
+		{
+			"name": "AtualizarSpell",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Naruto\",\r\n    \"description\": \"Rasengan\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/harrypotter/spells/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"harrypotter",
+						"spells",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "AtualizarSpell",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Naruto\",\r\n    \"description\": \"Rasengan\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/harrypotter/spells/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"harrypotter",
+								"spells",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Oct 2022 21:50:04 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 0,\n    \"name\": \"Naruto\",\n    \"description\": \"Rasengan\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Deletar Spell",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/harrypotter/spells/0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"harrypotter",
+						"spells",
+						"0"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Deletar Spell",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/harrypotter/spells/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"harrypotter",
+								"spells",
+								"0"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "14"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 22 Oct 2022 21:50:09 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Spell deletada"
+				}
+			]
+		}
+	]
+}
